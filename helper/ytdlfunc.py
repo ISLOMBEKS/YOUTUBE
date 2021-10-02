@@ -37,16 +37,16 @@ def extractYt(yturl):
 
 #  Need to work on progress
 
- def downloadyt(url, fmid, custom_progress):
-     ydl_opts = {
-         'format': f"{fmid}+bestaudio",
-         "outtmpl": "test+.%(ext)s",
-         'noplaylist': True,
-         'progress_hooks': [custom_progress],
-     }
-     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+# def downloadyt(url, fmid, custom_progress):
+#     ydl_opts = {
+#         'format': f"{fmid}+bestaudio",
+#         "outtmpl": "test+.%(ext)s",
+#        'noplaylist': True,
+#         'progress_hooks': [custom_progress],
+#     }
+#     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
 
-         ydl.download([url])
+#         ydl.download([url])
 
 
 # https://github.com/SpEcHiDe/AnyDLBot
